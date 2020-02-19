@@ -19,10 +19,24 @@
     font-size: 20px;
     text-transform: capitalize;
     font-weight: 400;
-    color: #101064;
+    color: #565670;
     padding:0 10px;
 }
-.search{
+.search form{
     display:flex;
     margin: 0 10px;
+}
+.searchInput{
+    border: 0;
+    width:0;
+    transition:width 0.5s ease-in;
+}
+.searchInput.active{
+    width:150px;
+}
+.searchInput:focus{
+    outline:none;
+}
+.searchIcon{
+    cursor:pointer;
 }
